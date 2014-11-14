@@ -1,0 +1,3 @@
+This script will remove all existing close-wait connections on the server
+
+Hope this helps.
