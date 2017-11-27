@@ -9,7 +9,7 @@ use NetPacket::TCP;
 use POSIX qw(setsid);
 use warnings;
 
-open(my $CONNECTIONS_WAIT, "netstat -tulnap | grep CLOSE_WAIT | awk '{print \$4,\$5}' | sed 's/:/ /g' |") || die "Failed: $!\n";
+open(my $CONNECTIONS_WAIT, "netstat -tulnap | grep CLOSE_WAIT | sed -e 's/::ffff://g' | awk '{print \$4,\$5}' | sed 's/:/ /g' |") || die "Failed: $!\n";
 
 while ( my $conn = <$CONNECTIONS_WAIT> )
 {
