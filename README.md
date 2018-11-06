@@ -17,3 +17,7 @@ $ mv kill_close_wait_connections.pl /usr/bin/kill_close_wait_connections
 $ chmod +x /usr/bin/kill_close_wait_connections
 $ kill_close_wait_connections
 ```
+# Copyleft
+```
+Originally created by Rahul Ghose
+```
