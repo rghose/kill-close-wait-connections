@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+# Originally created by mirage 2014
 use strict;
 use Socket;
 use Net::RawIP;
